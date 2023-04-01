@@ -7,6 +7,7 @@ public class Main {
 			else if(chr==')' && !stck.isEmpty() && stck.peek()=='(') stck.pop();
 			else if(chr==']' && !stck.isEmpty() && stck.peek()=='[') stck.pop();
 			else if(chr=='}' && !stck.isEmpty() && stck.peek()=='{') stck.pop();
+			else return false;
 		}
 		return stck.isEmpty();
 	}
