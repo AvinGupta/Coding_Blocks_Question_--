@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static int solution(String s) {
         int[] arr=new int[26];
