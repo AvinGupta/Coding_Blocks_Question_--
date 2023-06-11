@@ -4,6 +4,7 @@ public class Main {
     public static int solution(String s) {
         int[] arr=new int[26];
         for(int i=0;i<s.length();i++){
+            
             arr[(s.charAt(i)-97)]++;
         }
         for(int i=0;i<s.length();i++){
