@@ -6,10 +6,10 @@ public class Queen_Combination {
             System.out.println(answer);
             return;
         }
-        for(int i=ind+1;i<arr.length;i++){
+        for(int i=ind;i<arr.length;i++){
             if(arr[i]==0){
                 arr[i]=1;
-                Combination(arr,no_Queen,placed+1,answer+"b"+i+"Q"+placed,i);
+                Combination(arr,no_Queen,placed+1,answer+"b"+i+"Q"+placed,i+1);
                 arr[i]=0;
             }
         }
@@ -19,7 +19,7 @@ public class Queen_Combination {
         int board_size=sc.nextInt();
         int[] board=new int[board_size];
         int no_Queen=sc.nextInt();
-        Combination(board,no_Queen,0,"",-1);
+        Combination(board,no_Queen,0,"",0);
         sc.close();
     }
 }
