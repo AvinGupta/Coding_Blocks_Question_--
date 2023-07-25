@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Permutations_SubString {
     public static void Premutations(ArrayList<String> lst,String str,String ans){
         if(str.length()==0){
-            if(lst.contains(ans)) return;
             lst.add(ans);
             return;
         }
