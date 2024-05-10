@@ -5,7 +5,7 @@ class Graph {
     	public Graph(int v) {
     		this.map = new HashMap<>();
     		for (int i = 1; i <= v; i++) {
-    			map.put(i, new HashMap<>());
+    			map.put(i, new HashMap<>()); 
     		}
     	}
     	public void AddEdge(int v1, int v2, int cost) {
